@@ -15,8 +15,8 @@ export default function Contact() {
   const socialLinks = [
     { icon: Mail, href: "mailto:ukasyahnata@outlook.com", label: "ukasyahnata@outlook.com" },
     { icon: Linkedin, href: "https://linkedin.com/in/ukasyahnata", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com/ukasyahnata", label: "GitHub" },
-    { icon: Globe, href: "https://sodachi.dev", label: "sodachi.dev" },
+    { icon: Github, href: "https://github.com/Bananalem0n", label: "GitHub" },
+    // { icon: Globe, href: "https://sodachi.dev", label: "sodachi.dev" }, // Disabled - blog not ready yet
   ]
 
   return (
