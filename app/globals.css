@@ -41,38 +41,39 @@
 }
 
 .dark {
-  --background: oklch(0.18 0.01 60);
-  --foreground: oklch(0.93 0.01 60);
-  --card: oklch(0.22 0.01 60);
-  --card-foreground: oklch(0.93 0.01 60);
-  --popover: oklch(0.22 0.01 60);
-  --popover-foreground: oklch(0.93 0.01 60);
-  --primary: oklch(0.72 0.15 35);
-  --primary-foreground: oklch(0.18 0.01 60);
-  --secondary: oklch(0.35 0.05 45);
-  --secondary-foreground: oklch(0.93 0.01 60);
-  --muted: oklch(0.35 0.02 60);
-  --muted-foreground: oklch(0.7 0.02 60);
-  --accent: oklch(0.78 0.1 40);
-  --accent-foreground: oklch(0.18 0.01 60);
-  --destructive: oklch(0.63 0.26 27);
-  --destructive-foreground: oklch(0.98 0.008 60);
-  --border: oklch(0.35 0.01 60);
-  --input: oklch(0.3 0.01 60);
-  --ring: oklch(0.72 0.15 35);
-  --chart-1: oklch(0.72 0.15 35);
-  --chart-2: oklch(0.78 0.1 40);
-  --chart-3: oklch(0.68 0.12 25);
-  --chart-4: oklch(0.75 0.08 50);
-  --chart-5: oklch(0.72 0.15 35);
-  --sidebar: oklch(0.22 0.01 60);
-  --sidebar-foreground: oklch(0.93 0.01 60);
-  --sidebar-primary: oklch(0.72 0.15 35);
-  --sidebar-primary-foreground: oklch(0.18 0.01 60);
-  --sidebar-accent: oklch(0.78 0.1 40);
-  --sidebar-accent-foreground: oklch(0.18 0.01 60);
-  --sidebar-border: oklch(0.35 0.01 60);
-  --sidebar-ring: oklch(0.72 0.15 35);
+  /* Neutral dark theme - easy on eyes with subtle warm accents */
+  --background: oklch(0.15 0.005 250);         /* Neutral dark gray with slight cool tint */
+  --foreground: oklch(0.9 0.005 250);          /* Soft off-white */
+  --card: oklch(0.18 0.005 250);               /* Slightly lighter card */
+  --card-foreground: oklch(0.9 0.005 250);
+  --popover: oklch(0.18 0.005 250);
+  --popover-foreground: oklch(0.9 0.005 250);
+  --primary: oklch(0.75 0.12 45);              /* Softer, desaturated coral */
+  --primary-foreground: oklch(0.15 0.005 250);
+  --secondary: oklch(0.25 0.01 250);           /* Subtle gray */
+  --secondary-foreground: oklch(0.9 0.005 250);
+  --muted: oklch(0.25 0.005 250);
+  --muted-foreground: oklch(0.6 0.005 250);
+  --accent: oklch(0.7 0.08 55);                /* Muted warm accent */
+  --accent-foreground: oklch(0.15 0.005 250);
+  --destructive: oklch(0.55 0.2 25);
+  --destructive-foreground: oklch(0.95 0.005 250);
+  --border: oklch(0.28 0.005 250);
+  --input: oklch(0.22 0.005 250);
+  --ring: oklch(0.75 0.12 45);
+  --chart-1: oklch(0.75 0.12 45);              /* Soft coral */
+  --chart-2: oklch(0.7 0.08 55);               /* Muted peach */
+  --chart-3: oklch(0.65 0.1 150);              /* Soft teal */
+  --chart-4: oklch(0.7 0.1 280);               /* Soft purple */
+  --chart-5: oklch(0.65 0.08 200);             /* Soft blue */
+  --sidebar: oklch(0.17 0.005 250);
+  --sidebar-foreground: oklch(0.9 0.005 250);
+  --sidebar-primary: oklch(0.75 0.12 45);
+  --sidebar-primary-foreground: oklch(0.15 0.005 250);
+  --sidebar-accent: oklch(0.7 0.08 55);
+  --sidebar-accent-foreground: oklch(0.15 0.005 250);
+  --sidebar-border: oklch(0.28 0.005 250);
+  --sidebar-ring: oklch(0.75 0.12 45);
 }
 
 @theme inline {
@@ -147,6 +148,27 @@
       @apply h-screen snap-start snap-always;
     }
   }
+}
+
+/* 3D Flip Card Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.group:hover .group-hover\:rotate-y-180 {
+  transform: rotateY(180deg);
 }
 
 /* Add slow, satisfying keyframe animations for hero section */

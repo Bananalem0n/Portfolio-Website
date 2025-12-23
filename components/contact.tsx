@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail, Linkedin, Github, Twitter } from "lucide-react"
+import { Mail, Linkedin, Github, Globe } from "lucide-react"
 import { type FormEvent, useState } from "react"
 
 export default function Contact() {
@@ -13,10 +13,10 @@ export default function Contact() {
   }
 
   const socialLinks = [
-    { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Mail, href: "mailto:ukasyahnata@outlook.com", label: "ukasyahnata@outlook.com" },
+    { icon: Linkedin, href: "https://linkedin.com/in/ukasyahnata", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/ukasyahnata", label: "GitHub" },
+    { icon: Globe, href: "https://sodachi.dev", label: "sodachi.dev" },
   ]
 
   return (
@@ -100,7 +100,7 @@ export default function Contact() {
             </div>
 
             <div className="pt-4 sm:pt-6 border-t border-accent/10 mt-4 sm:mt-6">
-              <p className="text-xs text-foreground/50">© 2025 My Portfolio. Built with care.</p>
+              <p className="text-xs text-foreground/50">© 2025 Ukasyah Dewastoro. All rights reserved.</p>
             </div>
           </div>
         </div>

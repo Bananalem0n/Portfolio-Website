@@ -41,11 +41,6 @@ export default function Hero() {
           <div className="w-full h-1/3 bg-gradient-to-b from-transparent via-primary/30 to-transparent animate-[slideDown_8s_ease-in-out_infinite_5s]" />
         </div>
 
-        {/* Animated gradient orbs with glow effect */}
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-primary/8 animate-[float_20s_ease-in-out_infinite] animate-[glowPulse_8s_ease-in-out_infinite]" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-accent/6 animate-[floatReverse_25s_ease-in-out_infinite] animate-[glowPulse_10s_ease-in-out_infinite_2s]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[28rem] h-[28rem] rounded-full bg-secondary/4 blur-3xl animate-[pulse_15s_ease-in-out_infinite]" />
-
         {/* Accent particles */}
         <div className="absolute top-[15%] right-[20%] w-2 h-2 rounded-full bg-primary/40 blur-sm animate-[float_12s_ease-in-out_infinite]" />
         <div className="absolute top-[60%] left-[15%] w-1.5 h-1.5 rounded-full bg-accent/50 blur-sm animate-[floatReverse_15s_ease-in-out_infinite_1s]" />
@@ -58,7 +53,7 @@ export default function Hero() {
 
       <div className="relative z-10 text-center max-w-2xl mx-auto px-4 sm:px-6 py-20 lg:py-0">
         <div className="inline-block mb-4 sm:mb-6 px-3 sm:px-4 py-1.5 sm:py-2 bg-accent/10 rounded-full border border-accent/20">
-          <p className="text-xs sm:text-sm font-medium text-primary">Fresh Graduate & System Engineer</p>
+          <p className="text-xs sm:text-sm font-medium text-primary">Cloud & Infrastructure Engineer</p>
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 text-balance leading-tight">
@@ -66,8 +61,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-sm sm:text-base lg:text-lg text-foreground/70 mb-6 sm:mb-8 text-balance leading-relaxed px-2">
-          System Engineer specializing in virtualization, cloud infrastructure, and DevOps. I deploy and maintain
-          enterprise ICT infrastructure with best-practices and compliance standards.
+          Junior System Engineer bridging traditional hardware and modern cloud automation with enterprise best practices.
         </p>
 
         <button

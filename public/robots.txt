@@ -1,0 +1,8 @@
+# Portfolio Robots.txt
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sodachi.dev/sitemap.xml
